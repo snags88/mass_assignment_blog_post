@@ -1,0 +1,2 @@
+class PresidentController < App
+end
