@@ -9,7 +9,9 @@ class PresidentController < AppController
   end
 
   post '/presidents' do
-    @president = President.create(params[:president])
+    @president = President.create(:name => params[:name])
+    @president.party = params[:party]
+    @president.save
     redirect '/'
   end
 
