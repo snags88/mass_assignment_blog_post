@@ -1,0 +1,17 @@
+<h1>Presidents</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Political Party</th>
+  </tr>
+
+  <% @presidents.each do |president| %>
+  <tr>
+    <td><%= president.name %></td>
+    <td><%= president.party %></td>
+  </tr>
+  <% end %>
+</table>
+
+<a href="/presidents/new">Add New President</a>

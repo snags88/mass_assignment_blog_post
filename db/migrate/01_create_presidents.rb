@@ -3,5 +3,6 @@ class CreatePresidents < ActiveRecord::Migration
     create_table :presidents do |t|
       t.string :name
       t.string :party
+    end
   end
 end

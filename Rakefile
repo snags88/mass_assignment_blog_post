@@ -1,4 +1,4 @@
-Rakefilerequire_relative './config/environment.rb'
+require_relative './config/environment.rb'
 require 'sinatra/activerecord/rake'
 
 task :console do
